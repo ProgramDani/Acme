@@ -9,5 +9,10 @@ namespace GesPresta
 {
     public partial class Empleados : System.Web.UI.Page
     {
+        protected void Page_Load(object sender, EventArgs e)
+        {
+            txtCodEmp.Focus(); // Sitúa el foco en el elemento Código Empleado
+        }
+
     }
 }
