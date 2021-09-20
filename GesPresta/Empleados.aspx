@@ -67,7 +67,7 @@
             <div class="Texto">
                 <asp:Label ID="Label6" runat="server" Text="Label">Teléfonos</asp:Label>
             </div>
-            <asp:TextBox ID="txtTelEmp" runat="server" OnTextChanged="TextBox6_TextChanged" Width="304px"></asp:TextBox>
+            <asp:TextBox ID="txtTelEmp" runat="server" Width="304px"></asp:TextBox>
             <br />
 
             <div class="Texto">
