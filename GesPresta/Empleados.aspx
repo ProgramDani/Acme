@@ -23,7 +23,9 @@
            text-align:right;
            display:inline-block;
         }
-
+        #BotonEnviar{
+            text-align:right;
+        }
     </style>
 </head>
 <body>
@@ -81,16 +83,19 @@
             <br />
 
             <div class="Texto">
-            <asp:Label ID="Label9" runat="server" Text="Label">Sexo</asp:Label>
+                <asp:Label ID="Label9" runat="server" Text="Label">Sexo</asp:Label>
             </div>
-            <div id="RadioBoton">
-                <asp:RadioButtonList ID="rblSexEmp" runat="server" RepeatDirection="Horizontal">
+                <asp:RadioButtonList ID="rblSexEmp" runat="server" RepeatDirection="Horizontal" Height="17px" Width="177px" RepeatLayout="Flow">
                     <asp:ListItem Selected="True" Value="H">Hombre</asp:ListItem>
                     <asp:ListItem Value="M">Mujer</asp:ListItem>
                 </asp:RadioButtonList>
-            </div>
+           
+                
+            <br />
+                
+            <div class="Texto">
             <asp:Label ID="Label10" runat="server" Text="Label">Departamento</asp:Label>
-
+            </div>
             <asp:DropDownList ID="ddlDepEmp" runat="server">
                 <asp:ListItem Selected="True" Value="Investigación"></asp:ListItem>
                 <asp:ListItem Value="Desarrollo"></asp:ListItem>
@@ -100,8 +105,7 @@
             <br />
 
             <div id="BotonEnviar">
-                <asp:Button ID="cmdEnviar" runat="server" Text="Enviar" />
-                <br />
+                <asp:Button ID="cmdEnviar" runat="server" Text="Enviar" Width="68px" />
             </div>
         </div>
     </form>
