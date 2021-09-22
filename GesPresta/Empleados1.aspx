@@ -23,13 +23,9 @@
            text-align:right;
            display:inline-block;
         }
-        .Texto1{
-            display:inline-block;
-            padding-right:3em;
-        }
-        .Texto2{
-            display:inline-block;
-            padding-right:4em;
+        .Texto1 {
+            display: inline-block;
+            padding-right: 3em;
         }
         #BotonEnviar{
             text-align:right;
