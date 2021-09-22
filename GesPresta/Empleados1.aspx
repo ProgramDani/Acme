@@ -23,6 +23,14 @@
            text-align:right;
            display:inline-block;
         }
+        .Texto1{
+            display:inline-block;
+            padding-right:3em;
+        }
+        .Texto2{
+            display:inline-block;
+            padding-right:4em;
+        }
         #BotonEnviar{
             text-align:right;
         }
@@ -105,9 +113,11 @@
             <br />
 
             <div id="BotonEnviar">
-                <asp:Button ID="cmdEnviar" runat="server" Text="Enviar" Width="68px" />
+                <asp:Button ID="cmdEnviar" runat="server" Text="Enviar" Width="68px" OnClick="cmdEnviar_Click" />
             </div>
         </div>
+
+        <asp:Label ID="IblValores" runat="server" BackColor="#66FFFF" Visible="False" Width="60%"></asp:Label>
     </form>
 </body>
 </html>

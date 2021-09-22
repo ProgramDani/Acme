@@ -69,8 +69,8 @@
   <ItemGroup>
     <Content Include="Cabecera.ascx" />
     <Content Include="Default.aspx" />
-    <Content Include="Empleados - Copia.aspx" />
     <Content Include="Empleados1.aspx" />
+    <Content Include="Empleados.aspx" />
     <Content Include="Prestaciones.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -89,19 +89,19 @@
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Empleados - Copia.aspx.cs">
-      <DependentUpon>Empleados - Copia.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Empleados - Copia.aspx.designer.cs">
-      <DependentUpon>Empleados - Copia.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Empleados1.aspx.cs">
       <DependentUpon>Empleados1.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Empleados1.aspx.designer.cs">
       <DependentUpon>Empleados1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Empleados.aspx.cs">
+      <DependentUpon>Empleados.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Empleados.aspx.designer.cs">
+      <DependentUpon>Empleados.aspx</DependentUpon>
     </Compile>
     <Compile Include="Prestaciones.aspx.cs">
       <DependentUpon>Prestaciones.aspx</DependentUpon>
