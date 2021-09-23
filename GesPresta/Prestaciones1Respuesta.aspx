@@ -10,6 +10,7 @@
 <body>
     <form id="form1" runat="server">
         <div>
+            <asp:Label ID="lblValores" runat="server" Text="Label" BackColor="#C0FFFF" Width="70%"></asp:Label>
         </div>
     </form>
 </body>
