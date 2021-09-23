@@ -22,24 +22,23 @@
            width:45%;
            text-align:right;
            display:inline-block;
-           position:absolute;
         }
         .Texto1 {
-            display: inline-block;
-            padding-right: 3em;
-        }
-        .TextBox{
-           width:45%; 
-           float:left;
-           text-align:right;
            padding: 0px 20px 0px 0px;
+           width:45%;
+           text-align:right;
+           display:inline-block;
+           position:absolute;
+        }
+        .calendario {
+            position:relative;
+            left:600px;
+            top:-37px;
+            height: 192px;
+            width: 207px;
         }
         #BotonEnviar{
             text-align:right;
-        }
-        .calendario{
-            margin:1em;
-            position:relative;
         }
     </style>
 </head>
@@ -127,24 +126,16 @@
         <asp:Label ID="IblValores" runat="server" BackColor="#66FFFF" Visible="False" Width="60%"></asp:Label>
         <br />
         <br />
-        <div class="Texto">
-            <asp:Label ID="Label1" runat="server" Text="Label">Fecha de Nacicimiento</asp:Label>
-        </div>
-        <div class="TextBox">
-            <asp:TextBox ID="TextBox2" runat="server" Width="126px"></asp:TextBox>
-        </div>
-        <div class="calendario">
-            <asp:Calendar ID="Calendar1" runat="server"></asp:Calendar>
-        </div>
-        <br />
 
-        <div class="Texto">
-            <asp:Label ID="Label12" runat="server" Text="Label">Fecha de ingreso</asp:Label>
+        <div class="Texto1">
+            <asp:Label ID="Label1" runat="server" Text="Label">Fecha de Nacicimiento</asp:Label>
+            <br />
+            <asp:TextBox ID="TextBox2" runat="server" Width="126px"></asp:TextBox>
+            <div class="calendario">
+            <asp:Calendar ID="Calendar1" runat="server" style="margin-top: 0px"></asp:Calendar>
         </div>
-        <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
-        <div class="calendario">
-            <asp:Calendar ID="Calendar2" runat="server"></asp:Calendar>
         </div>
+        
     </form>
 </body>
 </html>

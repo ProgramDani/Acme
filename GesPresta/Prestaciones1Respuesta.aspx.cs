@@ -7,16 +7,19 @@ using System.Web.UI.WebControls;
 
 namespace GesPresta
 {
-    public partial class Prestaciones1 : System.Web.UI.Page
+    public partial class Prestaciones1Respuesta1 : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            txtCodPre.Focus(); // Sitúa el foco en el elemento Código Prestación
-        }
-
-        protected void cmdEnviar_Click(object sender, EventArgs e)
-        {
-
+            // Acceso directo por ID a los valores de la colección Form del objeto Request
+            string cadena = "";
+            cadena = cadena + "Código: " + Request.Form["txtCodPre"] + "<br/>";
+            cadena = cadena + "Descripción: " + Request.Form["txtDesPre"] + "<br/>";
+            cadena = cadena + "Importe: " + Request.Form["txtImpPre"] + "<br/>";
+            cadena = cadena + "Porcentaje: " + Request.Form["txtPorPre"] + "<br/>";
+            cadena = cadena + "Tipo de Prestación: " + Request.Form["ddlTipPre"] + "<br/>";
+            lblValores.Text = cadena;
+            lblValores.Visible = true;
         }
     }
 }
