@@ -29,13 +29,17 @@
            text-align:right;
            display:inline-block;
            position:absolute;
+           
         }
         .calendario {
             position:relative;
-            left:600px;
-            top:-37px;
-            height: 192px;
-            width: 207px;
+            top:-16px;
+            left:-33px;
+            width: 138%;
+            padding-left:0;
+            padding-right: 0px;
+            padding-top: 0px;
+            padding-bottom: 0px;
         }
         #BotonEnviar{
             text-align:right;
@@ -130,12 +134,16 @@
         <div class="Texto1">
             <asp:Label ID="Label1" runat="server" Text="Label">Fecha de Nacicimiento</asp:Label>
             <br />
+
             <asp:TextBox ID="TextBox2" runat="server" Width="126px"></asp:TextBox>
+
             <div class="calendario">
-            <asp:Calendar ID="Calendar1" runat="server" style="margin-top: 0px"></asp:Calendar>
+                <asp:Calendar ID="Calendar1" runat="server" Height="147px" Width="178px"></asp:Calendar>
+            </div>
         </div>
-        </div>
+
         
+        <asp:Label ID="Label12" runat="server" Text="Label">kji</asp:Label>
     </form>
 </body>
 </html>

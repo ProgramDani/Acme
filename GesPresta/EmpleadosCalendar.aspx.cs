@@ -29,5 +29,10 @@ namespace GesPresta
             "<br/> Sexo: " + rblSexEmp.SelectedItem.Value +
             "<br/> Departamento: " + ddlDepEmp.Text;
         }
+
+        protected System.Void Page_Load(System.Object sender, System.EventArgs e)
+        {
+
+        }
     }
 }
