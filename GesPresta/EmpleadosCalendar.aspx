@@ -25,21 +25,23 @@
         }
         .Texto1 {
            padding: 0px 20px 0px 0px;
-           width:45%;
+           width:77%;
            text-align:right;
            display:inline-block;
-           position:absolute;
-           
+            top: 557px;
+            left: 10px;
+            float:left;
+            height: 42px;
         }
         .calendario {
-            position:relative;
-            top:-16px;
-            left:-33px;
-            width: 138%;
-            padding-left:0;
+            padding-left:670px;
+            width: 180px;
+            margin-top:-45px;
             padding-right: 0px;
-            padding-top: 0px;
-            padding-bottom: 0px;
+        }
+        .elementoFlotante{
+            float:left;
+            width: 853px;
         }
         #BotonEnviar{
             text-align:right;
@@ -131,19 +133,31 @@
         <br />
         <br />
 
-        <div class="Texto1">
-            <asp:Label ID="Label1" runat="server" Text="Label">Fecha de Nacicimiento</asp:Label>
-            <br />
-
-            <asp:TextBox ID="TextBox2" runat="server" Width="126px"></asp:TextBox>
-
+        <div class="elementoFlotante">
+            <div class="Texto1">
+                <asp:Label ID="Label1" runat="server" Text="Label">Fecha de Nacicimiento</asp:Label>
+                <br />
+                <asp:TextBox ID="TextBox2" runat="server" Width="126px"></asp:TextBox>
+            </div>
             <div class="calendario">
                 <asp:Calendar ID="Calendar1" runat="server" Height="147px" Width="178px"></asp:Calendar>
             </div>
-        </div>
 
+            <div class="elementoFlotante">
+                <div class="Texto1">
+                <asp:Label ID="Label12" runat="server" Text="Label">Fecha de Ingreso</asp:Label>
+                <br />
+                <asp:TextBox ID="TextBox1" runat="server" Width="126px"></asp:TextBox>
+                </div>
+                <div class="calendario">
+                    <asp:Calendar ID="Calendar2" runat="server" Height="147px" Width="178px"></asp:Calendar>
+                </div>
+
+            </div>
+            
+        </div>
         
-        <asp:Label ID="Label12" runat="server" Text="Label">kji</asp:Label>
+        
     </form>
 </body>
 </html>
