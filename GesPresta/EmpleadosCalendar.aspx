@@ -25,7 +25,7 @@
         }
         .Texto1 {
            padding: 0px 20px 0px 0px;
-           width:77%;
+           width:45%;
            text-align:right;
            display:inline-block;
             top: 557px;
@@ -33,18 +33,24 @@
             float:left;
             height: 42px;
         }
-        .calendario {
-            padding-left:670px;
-            width: 180px;
-            margin-top:-45px;
-            padding-right: 0px;
-        }
-        .elementoFlotante{
+        .Texto2{
+            padding: 0px 20px 0px 0px;
+            width:10%;
+            text-align:right;
+            display:inline-block;
+            top: 557px;
+            left: 15px;
             float:left;
-            width: 853px;
+            height: 42px;
+        }
+        .calendario {
+            width: 12%;
+            margin-top:0px;
+            padding-right: 0px;
+            float:left;
         }
         #BotonEnviar{
-            text-align:right;
+            text-align:center;
         }
     </style>
 </head>
@@ -123,38 +129,45 @@
                 <asp:ListItem>Administración</asp:ListItem>
             </asp:DropDownList>
             <br />
-
-            <div id="BotonEnviar">
-                <asp:Button ID="cmdEnviar" runat="server" Text="Enviar" Width="68px" OnClick="cmdEnviar_Click" />
             </div>
-        </div>
 
-        <asp:Label ID="IblValores" runat="server" BackColor="#66FFFF" Visible="False" Width="60%"></asp:Label>
-        <br />
-        <br />
-
-        <div class="elementoFlotante">
-            <div class="Texto1">
-                <asp:Label ID="lblError1" runat="server" Text="Label">Fecha de Nacicimiento</asp:Label>
-                <br />
-                <asp:TextBox ID="TextBox1" runat="server" Width="126px"></asp:TextBox>
-            </div>
-            <div class="calendario">
-                <asp:Calendar ID="Calendar1" runat="server" Height="147px" Width="178px"></asp:Calendar>
-            </div>
-        </div>
-        <div class="elementoFlotante">
-            <div class="Texto1">
-            <asp:Label ID="lblError2" runat="server" Text="Label">Fecha de Ingreso</asp:Label>
+            <asp:Label ID="IblValores" runat="server" BackColor="#66FFFF" Visible="False" Width="60%"></asp:Label>
             <br />
-            <asp:TextBox ID="TextBox2" runat="server" Width="126px"></asp:TextBox>
+            <br />
+            <div class="Texto1">
+            <asp:Label ID="label1" runat="server" Text="Label">Fecha de Nacimiento</asp:Label>
+            <br />
+            <asp:TextBox ID="TextBox1" runat="server" Width="126px" OnTextChanged="TextBox1_TextChanged"></asp:TextBox>
             </div>
             <div class="calendario">
-                <asp:Calendar ID="Calendar2" runat="server" Height="147px" Width="178px"></asp:Calendar>
+                <asp:Calendar ID="Calendar2" runat="server" Height="92px" Width="178px"></asp:Calendar>
             </div>
+
+            <div class="Texto2">
+                <asp:Label ID="label3" runat="server" Text="Label">Fecha de Ingreso</asp:Label>
+                <br />
+                <asp:TextBox ID="TextBox2" runat="server" Width="126px" OnTextChanged="TextBox2_TextChanged"></asp:TextBox>
+            </div>
+            <div class="calendario">
+                <asp:Calendar ID="Calendar1" runat="server" Height="92px" Width="178px"></asp:Calendar>
+            </div>
+            <asp:Label ID="Label12" runat="server" Text="Label">Antiguedad:</asp:Label>
+            <br />
+            <br />
+            <asp:TextBox ID="TextBox3" runat="server" Width="57px"></asp:TextBox>
+            <asp:Label ID="Label13" runat="server" Text="Label">Años</asp:Label>
+            <br />
+            <br />
+            <asp:TextBox ID="TextBox4" runat="server" Width="55px"></asp:TextBox>
+            <asp:Label ID="Label14" runat="server" Text="Label">Meses</asp:Label>
+            <br />
+            <br />
+            <asp:TextBox ID="TextBox5" runat="server" Width="54px"></asp:TextBox>
+            <asp:Label ID="Label15" runat="server" Text="Label">Días</asp:Label>
+
+        <div id="BotonEnviar">
+            <asp:Button ID="cmdEnviar" runat="server" Text="Enviar" Width="68px" OnClick="cmdEnviar_Click" />
         </div>
-        
-        
     </form>
 </body>
 </html>

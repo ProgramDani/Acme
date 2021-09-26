@@ -29,13 +29,11 @@ namespace GesPresta
             "<br/> Sexo: " + rblSexEmp.SelectedItem.Value +
             "<br/> Departamento: " + ddlDepEmp.Text;
         }
-
-        protected void Calendar1_SelectionChanged(object sender, EventArgs e)
+        /*cuadros de texto para poder introducir o editar la fecha de nacimiento y la de ingreso*/
+        protected void TextBox1_TextChanged(object sender, EventArgs e)
         {
-            //if(TextBox2.Text() < TextBox2)
-            //{
-            //    Console.WriteLine("");
-            //}
+            Calendar1.SelectedDate = Convert.ToDateTime(txtFnaEmp.Text); //asignar fecha
+            Calendar1.VisibleDate = Convert.ToDateTime(txtFnaEmp.Text); //hacer visible la fecha
         }
     }
 }
