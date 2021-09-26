@@ -135,26 +135,23 @@
 
         <div class="elementoFlotante">
             <div class="Texto1">
-                <asp:Label ID="Label1" runat="server" Text="Label">Fecha de Nacicimiento</asp:Label>
+                <asp:Label ID="lblError1" runat="server" Text="Label">Fecha de Nacicimiento</asp:Label>
                 <br />
-                <asp:TextBox ID="TextBox2" runat="server" Width="126px"></asp:TextBox>
+                <asp:TextBox ID="TextBox1" runat="server" Width="126px"></asp:TextBox>
             </div>
             <div class="calendario">
                 <asp:Calendar ID="Calendar1" runat="server" Height="147px" Width="178px"></asp:Calendar>
             </div>
-
-            <div class="elementoFlotante">
-                <div class="Texto1">
-                <asp:Label ID="Label12" runat="server" Text="Label">Fecha de Ingreso</asp:Label>
-                <br />
-                <asp:TextBox ID="TextBox1" runat="server" Width="126px"></asp:TextBox>
-                </div>
-                <div class="calendario">
-                    <asp:Calendar ID="Calendar2" runat="server" Height="147px" Width="178px"></asp:Calendar>
-                </div>
-
+        </div>
+        <div class="elementoFlotante">
+            <div class="Texto1">
+            <asp:Label ID="lblError2" runat="server" Text="Label">Fecha de Ingreso</asp:Label>
+            <br />
+            <asp:TextBox ID="TextBox2" runat="server" Width="126px"></asp:TextBox>
             </div>
-            
+            <div class="calendario">
+                <asp:Calendar ID="Calendar2" runat="server" Height="147px" Width="178px"></asp:Calendar>
+            </div>
         </div>
         
         
