@@ -144,7 +144,7 @@
             </div>
 
             <div class="Texto2">
-                <asp:Label ID="label3" runat="server" Text="Label">Fecha de Ingreso</asp:Label>
+                <asp:Label ID="label" runat="server" Text="Label">Fecha de Ingreso</asp:Label>
                 <br />
                 <asp:TextBox ID="TextBox2" runat="server" Width="126px" OnTextChanged="TextBox2_TextChanged"></asp:TextBox>
             </div>
