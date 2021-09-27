@@ -146,7 +146,7 @@
             <div class="Texto2">
                 <asp:Label ID="label" runat="server" Text="Label">Fecha de Ingreso</asp:Label>
                 <br />
-                <asp:TextBox ID="TextBox2" runat="server" Width="126px" OnTextChanged="TextBox2_TextChanged"></asp:TextBox>
+                <asp:TextBox ID="TextBox2" runat="server" Width="126px"></asp:TextBox>
             </div>
             <div class="calendario">
                 <asp:Calendar ID="Calendar1" runat="server" Height="92px" Width="178px"></asp:Calendar>
@@ -164,7 +164,7 @@
             <br />
             <asp:TextBox ID="TextBox5" runat="server" Width="54px"></asp:TextBox>
             <asp:Label ID="Label15" runat="server" Text="Label">Días</asp:Label>
-
+            <br />
         <div id="BotonEnviar">
             <asp:Button ID="cmdEnviar" runat="server" Text="Enviar" Width="68px" OnClick="cmdEnviar_Click" />
         </div>
