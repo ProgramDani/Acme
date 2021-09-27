@@ -25,7 +25,7 @@
         }
         .Texto1 {
            padding: 0px 20px 0px 0px;
-           width:45%;
+           width:41%;
            text-align:right;
            display:inline-block;
             top: 557px;
@@ -51,6 +51,7 @@
         }
         #BotonEnviar{
             text-align:center;
+            display:block;
         }
     </style>
 </head>
@@ -95,13 +96,6 @@
             </div>
             <asp:TextBox ID="txtTelEmp" runat="server" Width="304px"></asp:TextBox>
             <br />
-
-            <div class="Texto">
-                <asp:Label ID="Label7" runat="server" Text="Label">Fecha de Nacimiento</asp:Label>
-            </div>
-            <asp:TextBox ID="txtFnaEmp" runat="server"></asp:TextBox>
-            <br />
-
             <div class="Texto">
                 <asp:Label ID="Label8" runat="server" Text="Label">Fecha de Ingreso</asp:Label>
             </div>
@@ -115,8 +109,6 @@
                     <asp:ListItem Selected="True" Value="H">Hombre</asp:ListItem>
                     <asp:ListItem Value="M">Mujer</asp:ListItem>
                 </asp:RadioButtonList>
-           
-                
             <br />
                 
             <div class="Texto">
@@ -137,37 +129,42 @@
             <div class="Texto1">
             <asp:Label ID="label1" runat="server" Text="Label">Fecha de Nacimiento</asp:Label>
             <br />
-            <asp:TextBox ID="TextBox1" runat="server" Width="126px" OnTextChanged="TextBox1_TextChanged"></asp:TextBox>
+                <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
+            </div>
+            <div class="calendario">
+                <asp:Calendar ID="Calendar1" runat="server" OnSelectionChanged="Calendar2_SelectionChanged"></asp:Calendar>
+            </div>
+        
+            <div class="Texto2">
+                <asp:Label ID="label" runat="server" Text="Label">Fecha de Ingreso</asp:Label>
+                <br />
+                <asp:TextBox ID="txtFnaEmp" runat="server" Width="126px"></asp:TextBox>
             </div>
             <div class="calendario">
                 <asp:Calendar ID="Calendar2" runat="server" Height="92px" Width="178px"></asp:Calendar>
             </div>
-
-            <div class="Texto2">
-                <asp:Label ID="label" runat="server" Text="Label">Fecha de Ingreso</asp:Label>
-                <br />
-                <asp:TextBox ID="TextBox2" runat="server" Width="126px"></asp:TextBox>
-            </div>
-            <div class="calendario">
-                <asp:Calendar ID="Calendar1" runat="server" Height="92px" Width="178px"></asp:Calendar>
-            </div>
             <asp:Label ID="Label12" runat="server" Text="Label">Antiguedad:</asp:Label>
             <br />
             <br />
-            <asp:TextBox ID="TextBox3" runat="server" Width="57px"></asp:TextBox>
+            <asp:TextBox ID="txtAños" runat="server" Width="57px"></asp:TextBox>
             <asp:Label ID="Label13" runat="server" Text="Label">Años</asp:Label>
             <br />
             <br />
-            <asp:TextBox ID="TextBox4" runat="server" Width="55px"></asp:TextBox>
+            <asp:TextBox ID="TxtMeses" runat="server" Width="55px"></asp:TextBox>
             <asp:Label ID="Label14" runat="server" Text="Label">Meses</asp:Label>
             <br />
             <br />
-            <asp:TextBox ID="TextBox5" runat="server" Width="54px"></asp:TextBox>
+            <asp:TextBox ID="txtDias" runat="server" Width="54px"></asp:TextBox>
             <asp:Label ID="Label15" runat="server" Text="Label">Días</asp:Label>
             <br />
-        <div id="BotonEnviar">
-            <asp:Button ID="cmdEnviar" runat="server" Text="Enviar" Width="68px" OnClick="cmdEnviar_Click" />
-        </div>
+            <br />
+            <div id="BotonEnviar">
+                <asp:Button ID="Button1" runat="server" Text="Enviar" OnClick="Button1_Click" />
+            </div>
+        <asp:Label ID="lblError1" runat="server" Text="Label" BackColor="Lime" Visible="False" Width="21%"></asp:Label>
+        <asp:Label ID="lblError2" runat="server" Text="Label" BackColor="#66FFFF" Visible="False" Width="21%"></asp:Label>
+        <br />
+        
     </form>
 </body>
 </html>
