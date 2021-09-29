@@ -98,9 +98,6 @@
             <br />
             <div class="Texto">
                 <asp:Label ID="Label8" runat="server" Text="Label">Fecha de Ingreso</asp:Label>
-            </div>
-            <asp:TextBox ID="txtFinEmp" runat="server"></asp:TextBox>
-            <br />
 
             <div class="Texto">
                 <asp:Label ID="Label9" runat="server" Text="Label">Sexo</asp:Label>
@@ -129,19 +126,19 @@
             <div class="Texto1">
             <asp:Label ID="label1" runat="server" Text="Label">Fecha de Nacimiento</asp:Label>
             <br />
-                <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
+                <asp:TextBox ID="TxtFnaEmp" runat="server" OnTextChanged="TxtFnaEmpleado"></asp:TextBox>
             </div>
             <div class="calendario">
-                <asp:Calendar ID="Calendar1" runat="server" OnSelectionChanged="Calendar2_SelectionChanged"></asp:Calendar>
+                <asp:Calendar ID="Calendar1" runat="server" OnSelectionChanged="Calendar1_SelectionChanged" Width="148px"></asp:Calendar>
             </div>
         
             <div class="Texto2">
                 <asp:Label ID="label" runat="server" Text="Label">Fecha de Ingreso</asp:Label>
                 <br />
-                <asp:TextBox ID="txtFnaEmp" runat="server" Width="126px"></asp:TextBox>
+                <asp:TextBox ID="TxtFinEmp" runat="server" Width="126px" OnTextChanged="TxtFinEmp_TextChanged"></asp:TextBox>
             </div>
             <div class="calendario">
-                <asp:Calendar ID="Calendar2" runat="server" Height="92px" Width="178px"></asp:Calendar>
+                <asp:Calendar ID="Calendar2" runat="server"></asp:Calendar>
             </div>
             <asp:Label ID="Label12" runat="server" Text="Label">Antiguedad:</asp:Label>
             <br />
@@ -164,7 +161,7 @@
         <asp:Label ID="lblError1" runat="server" Text="Label" BackColor="Lime" Visible="False" Width="21%"></asp:Label>
         <asp:Label ID="lblError2" runat="server" Text="Label" BackColor="#66FFFF" Visible="False" Width="21%"></asp:Label>
         <br />
-        
+    </div>
     </form>
 </body>
 </html>

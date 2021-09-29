@@ -148,15 +148,6 @@ namespace GesPresta {
         protected global::System.Web.UI.WebControls.Label Label8;
         
         /// <summary>
-        /// Control txtFinEmp.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtFinEmp;
-        
-        /// <summary>
         /// Control Label9.
         /// </summary>
         /// <remarks>
@@ -211,13 +202,13 @@ namespace GesPresta {
         protected global::System.Web.UI.WebControls.Label label1;
         
         /// <summary>
-        /// Control TextBox1.
+        /// Control TxtFnaEmp.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox1;
+        protected global::System.Web.UI.WebControls.TextBox TxtFnaEmp;
         
         /// <summary>
         /// Control Calendar1.
@@ -238,13 +229,13 @@ namespace GesPresta {
         protected global::System.Web.UI.WebControls.Label label;
         
         /// <summary>
-        /// Control txtFnaEmp.
+        /// Control TxtFinEmp.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtFnaEmp;
+        protected global::System.Web.UI.WebControls.TextBox TxtFinEmp;
         
         /// <summary>
         /// Control Calendar2.
