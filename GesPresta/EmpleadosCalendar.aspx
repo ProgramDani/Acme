@@ -25,7 +25,7 @@
         }
         .Texto1 {
            padding: 0px 20px 0px 0px;
-           width:41%;
+           width:45%;
            text-align:right;
            display:inline-block;
             top: 557px;
@@ -44,14 +44,23 @@
             height: 42px;
         }
         .calendario {
-            width: 12%;
+            width: 15%;
             margin-top:0px;
             padding-right: 0px;
             float:left;
         }
+        .Valores{
+            display:inline-block;
+             display:block;
+            margin-left:1em;
+        }
         #BotonEnviar{
             text-align:center;
-            display:block;
+           clear:right;
+            width:1267px;
+            margin:1em;
+            padding-left:15%;
+          
         }
     </style>
 </head>
@@ -96,8 +105,7 @@
             </div>
             <asp:TextBox ID="txtTelEmp" runat="server" Width="304px"></asp:TextBox>
             <br />
-            <div class="Texto">
-                <asp:Label ID="Label8" runat="server" Text="Label">Fecha de Ingreso</asp:Label>
+            
 
             <div class="Texto">
                 <asp:Label ID="Label9" runat="server" Text="Label">Sexo</asp:Label>
@@ -138,21 +146,27 @@
                 <asp:TextBox ID="TxtFinEmp" runat="server" Width="126px" OnTextChanged="TxtFinEmp_TextChanged"></asp:TextBox>
             </div>
             <div class="calendario">
-                <asp:Calendar ID="Calendar2" runat="server"></asp:Calendar>
+                <asp:Calendar ID="Calendar2" runat="server" Width="148px"></asp:Calendar>
             </div>
-            <asp:Label ID="Label12" runat="server" Text="Label">Antiguedad:</asp:Label>
+            <div class="Valores">
+                <asp:Label ID="Label12" runat="server" Text="Label">Antiguedad:</asp:Label>
+                <br />
+                <br />
+                <asp:TextBox ID="txtAños" runat="server" Width="57px"></asp:TextBox>
+                <asp:Label ID="Label13" runat="server" Text="Label">Años</asp:Label>
+                <br />
+                <br />
+                <asp:TextBox ID="TxtMeses" runat="server" Width="55px"></asp:TextBox>
+                <asp:Label ID="Label14" runat="server" Text="Label">Meses</asp:Label>
+                <br />
+                <br />
+                <asp:TextBox ID="txtDias" runat="server" Width="54px"></asp:TextBox>
+                <asp:Label ID="Label15" runat="server" Text="Label">Días</asp:Label>
+            </div>
             <br />
             <br />
-            <asp:TextBox ID="txtAños" runat="server" Width="57px"></asp:TextBox>
-            <asp:Label ID="Label13" runat="server" Text="Label">Años</asp:Label>
             <br />
             <br />
-            <asp:TextBox ID="TxtMeses" runat="server" Width="55px"></asp:TextBox>
-            <asp:Label ID="Label14" runat="server" Text="Label">Meses</asp:Label>
-            <br />
-            <br />
-            <asp:TextBox ID="txtDias" runat="server" Width="54px"></asp:TextBox>
-            <asp:Label ID="Label15" runat="server" Text="Label">Días</asp:Label>
             <br />
             <br />
             <div id="BotonEnviar">
@@ -161,7 +175,6 @@
         <asp:Label ID="lblError1" runat="server" Text="Label" BackColor="Lime" Visible="False" Width="21%"></asp:Label>
         <asp:Label ID="lblError2" runat="server" Text="Label" BackColor="#66FFFF" Visible="False" Width="21%"></asp:Label>
         <br />
-    </div>
     </form>
 </body>
 </html>
