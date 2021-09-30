@@ -24,7 +24,11 @@
            display:inline-block;
         }
         #BotonEnviar{
-            text-align:right;
+            text-align:center;
+            padding:2em;
+        }
+        .label{
+            text-align:center;
         }
     </style>
 </head>

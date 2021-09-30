@@ -175,15 +175,6 @@ namespace GesPresta {
         protected global::System.Web.UI.WebControls.DropDownList ddlDepEmp;
         
         /// <summary>
-        /// Control IblValores.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label IblValores;
-        
-        /// <summary>
         /// Control label1.
         /// </summary>
         /// <remarks>
@@ -326,5 +317,14 @@ namespace GesPresta {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lblError2;
+        
+        /// <summary>
+        /// Control IblValores.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label IblValores;
     }
 }

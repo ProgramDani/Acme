@@ -27,6 +27,7 @@
         #BotonEnviar{
             text-align:center;
         }
+        
     </style>
 </head>
 <body>
@@ -76,7 +77,7 @@
         <br />
 
         <div id="BotonEnviar">
-            <asp:Button ID="cmdEnviar" runat="server" Text="Enviar" OnClick="cmdEnviar_Click" PostBackUrl="~/Prestaciones1Respuesta.aspx" />
+            <asp:Button ID="cmdEnviar" runat="server" Text="Enviar" PostBackUrl="~/Prestaciones1Respuesta.aspx" />
         </div>
         <br />
     </form>

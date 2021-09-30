@@ -6,10 +6,22 @@
 <head runat="server">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title></title>
+    <style type="text/css">
+        .label{
+            text-align:center;
+            margin:1em;
+        }
+        .label1{
+            text-transform:capitalize;
+        }
+    </style>
 </head>
 <body>
     <form id="form1" runat="server">
-        <div>
+        <div class="label">
+            <div class="label1">
+                <asp:Label ID="lblValores1" runat="server" Text="VALORES RECIBIDOS DESDE EL FORMULARIO PRESTACIONES1.ASPX" Visible="False"></asp:Label>
+            </div>
             <asp:Label ID="lblValores" runat="server" Text="Label" BackColor="#C0FFFF" Width="70%"></asp:Label>
         </div>
     </form>

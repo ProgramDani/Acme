@@ -28,7 +28,11 @@
             padding-right: 3em;
         }
         #BotonEnviar{
-            text-align:right;
+            text-align:center;
+            padding:1em;
+        }
+        .label{
+            text-align:center;
         }
     </style>
 </head>
@@ -112,8 +116,9 @@
                 <asp:Button ID="cmdEnviar" runat="server" Text="Enviar" Width="68px" OnClick="cmdEnviar_Click" />
             </div>
         </div>
-
-        <asp:Label ID="IblValores" runat="server" BackColor="#66FFFF" Visible="False" Width="60%"></asp:Label>
+        <div class="label">
+            <asp:Label ID="IblValores" runat="server" BackColor="#66FFFF" Visible="False" Width="60%"></asp:Label>
+        </div>
     </form>
 </body>
 </html>

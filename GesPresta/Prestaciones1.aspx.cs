@@ -13,10 +13,5 @@ namespace GesPresta
         {
             txtCodPre.Focus(); // Sitúa el foco en el elemento Código Prestación
         }
-
-        protected void cmdEnviar_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }

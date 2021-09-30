@@ -60,7 +60,9 @@
             width:1267px;
             margin:1em;
             padding-left:15%;
-          
+        }
+        label{
+            padding-left:25%;
         }
     </style>
 </head>
@@ -128,7 +130,6 @@
             <br />
             </div>
 
-            <asp:Label ID="IblValores" runat="server" BackColor="#66FFFF" Visible="False" Width="60%"></asp:Label>
             <br />
             <br />
             <div class="Texto1">
@@ -137,7 +138,16 @@
                 <asp:TextBox ID="TxtFnaEmp" runat="server" OnTextChanged="TxtFnaEmpleado"></asp:TextBox>
             </div>
             <div class="calendario">
-                <asp:Calendar ID="Calendar1" runat="server" OnSelectionChanged="Calendar1_SelectionChanged" Width="148px"></asp:Calendar>
+                <asp:Calendar ID="Calendar1" runat="server" OnSelectionChanged="Calendar1_SelectionChanged" Width="200px" BackColor="White" BorderColor="#999999" CellPadding="4" DayNameFormat="Shortest" Font-Names="Verdana" Font-Size="8pt" ForeColor="Black" Height="180px">
+                    <DayHeaderStyle BackColor="#CCCCCC" Font-Bold="True" Font-Size="7pt" />
+                    <NextPrevStyle VerticalAlign="Bottom" />
+                    <OtherMonthDayStyle ForeColor="#808080" />
+                    <SelectedDayStyle BackColor="#666666" Font-Bold="True" ForeColor="White" />
+                    <SelectorStyle BackColor="#CCCCCC" />
+                    <TitleStyle BackColor="#999999" BorderColor="Black" Font-Bold="True" />
+                    <TodayDayStyle BackColor="#CCCCCC" ForeColor="Black" />
+                    <WeekendDayStyle BackColor="#FFFFCC" />
+                </asp:Calendar>
             </div>
         
             <div class="Texto2">
@@ -146,7 +156,16 @@
                 <asp:TextBox ID="TxtFinEmp" runat="server" Width="126px" OnTextChanged="TxtFinEmp_TextChanged"></asp:TextBox>
             </div>
             <div class="calendario">
-                <asp:Calendar ID="Calendar2" runat="server" Width="148px"></asp:Calendar>
+                <asp:Calendar ID="Calendar2" runat="server" Width="200px" BackColor="White" BorderColor="#999999" CellPadding="4" DayNameFormat="Shortest" Font-Names="Verdana" Font-Size="8pt" ForeColor="Black" Height="180px" OnSelectionChanged="Calendar2_SelectionChanged">
+                    <DayHeaderStyle BackColor="#CCCCCC" Font-Bold="True" Font-Size="7pt" />
+                    <NextPrevStyle VerticalAlign="Bottom" />
+                    <OtherMonthDayStyle ForeColor="#808080" />
+                    <SelectedDayStyle BackColor="#666666" Font-Bold="True" ForeColor="White" />
+                    <SelectorStyle BackColor="#CCCCCC" />
+                    <TitleStyle BackColor="#999999" BorderColor="Black" Font-Bold="True" />
+                    <TodayDayStyle BackColor="#CCCCCC" ForeColor="Black" />
+                    <WeekendDayStyle BackColor="#FFFFCC" />
+                </asp:Calendar>
             </div>
             <div class="Valores">
                 <asp:Label ID="Label12" runat="server" Text="Label">Antiguedad:</asp:Label>
@@ -174,6 +193,10 @@
             </div>
         <asp:Label ID="lblError1" runat="server" Text="Label" BackColor="Lime" Visible="False" Width="21%"></asp:Label>
         <asp:Label ID="lblError2" runat="server" Text="Label" BackColor="#66FFFF" Visible="False" Width="21%"></asp:Label>
+        <label>
+            <asp:Label ID="IblValores" runat="server" BackColor="#66FFFF" Visible="False" Width="60%"></asp:Label>
+        </label>
+            
         <br />
     </form>
 </body>

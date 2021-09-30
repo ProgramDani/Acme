@@ -32,40 +32,6 @@ namespace GesPresta
                 "<br/> Departamento: " + ddlDepEmp.Text;
             }
         }
-        /*cuadros de texto para poder introducir o editar la fecha de nacimiento y la de ingreso*/
-        //publuc bool validarfecha()
-        //{
-        //    bool fecha
-        //}
-        //protected void Calendar2_SelectionChanged(object sender, EventArgs e)
-        //{
-        //    //Calendar1.SelectedDate = Convert.ToDateTime(TextBox1.Text); //asignar fecha
-        //    //Calendar1.VisibleDate = Convert.ToDateTime(txtFnaEmp.Text); //hacer visible la fecha
-
-        //    //Calendar2.SelectedDate = Convert.ToDateTime(TextBox1.Text); //asignar fecha
-        //    //Calendar2.VisibleDate = Convert.ToDateTime(txtFnaEmp.Text); //hacer visible la fecha
-        //    ////si es distinto de vaio comprobamos lo de validar la fecha
-        //    ///*si es correcto
-        //    // lo que hy en el pdf en calendar 2*/
-
-        //    string Fecha_ingreso = Calendar1.SelectedDate.ToShortDateString(txtTelEmpleadona.text)
-        //    string Fecha_Nacimiento = Calendar1.SelectedDate.ToShortDateString(Fecha_Nacimiento).Date;
-            
-        //    DateTime dtHoy = System.DateTime.Now;
-
-        //    if (txtAños.Emplead.Text != "" < Fecha_Nacimiento)
-        //    {
-        //        lblError1.Visible = true;
-        //        lblError1.Text = "ERROR -> fecha de ingreso menor a la de nacimiento";
-        //        //Fecha_ingreso =false;
-        //    }
-        //    else if(Fecha_ingreso > dtHoy)
-        //    {
-        //        lblError2.Visible = true;
-        //        lblError2.Text = "ERROR -> fecha de ingreso mayor a la actual";
-        //        //Fecha_ingreso = false;
-        //    }
-        //}
         public bool Validarfecha(string fecha_nac, string fecha_ingreso)
         {
             bool fechaing1_valida, fechaing2_valida, fecha_valida = false;
@@ -147,7 +113,29 @@ namespace GesPresta
             string Fecha_nacimiento = Calendar1.SelectedDate.ToShortDateString();
             string Fecha_ingreso = Calendar2.SelectedDate.ToShortDateString();
 
+            TxtFinEmp.Text = Fecha_ingreso;
             if(Validarfecha(Fecha_nacimiento, Fecha_ingreso))
+            {
+                TimeSpan diferencia = dtHoy - Calendar2.SelectedDate;
+                DateTime fechamin = new DateTime(1, 1, 1);
+
+                txtAños.Text = ((fechamin + diferencia).Year - 1).ToString();
+                TxtMeses.Text = ((fechamin + diferencia).Month - 1).ToString();
+                txtDias.Text = ((fechamin + diferencia).Day).ToString();
+            }
+        }
+
+        protected void Calendar2_SelectionChanged(object sender, EventArgs e)
+        {
+
+            DateTime dtHoy = System.DateTime.Now;
+
+            string Fecha_nacimiento = Calendar1.SelectedDate.ToShortDateString();
+            string Fecha_ingreso = Calendar2.SelectedDate.ToShortDateString();
+
+            TxtFinEmp.Text = Fecha_ingreso;
+
+            if (Validarfecha(Fecha_nacimiento, Fecha_ingreso))
             {
                 TimeSpan diferencia = dtHoy - Calendar2.SelectedDate;
                 DateTime fechamin = new DateTime(1, 1, 1);
