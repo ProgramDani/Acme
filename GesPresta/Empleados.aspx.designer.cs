@@ -40,6 +40,15 @@ namespace GesPresta {
         protected global::System.Web.UI.WebControls.Label Label11;
         
         /// <summary>
+        /// Control rqdTxtCodEmp.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rqdTxtCodEmp;
+        
+        /// <summary>
         /// Control txtCodEmp.
         /// </summary>
         /// <remarks>
@@ -58,6 +67,15 @@ namespace GesPresta {
         protected global::System.Web.UI.WebControls.Label Label2;
         
         /// <summary>
+        /// Control rqdTxtNIF.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rqdTxtNIF;
+        
+        /// <summary>
         /// Control txtNifEmp.
         /// </summary>
         /// <remarks>
@@ -74,6 +92,15 @@ namespace GesPresta {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label Label3;
+        
+        /// <summary>
+        /// Control rqdTxtApellidoNombre.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rqdTxtApellidoNombre;
         
         /// <summary>
         /// Control txtNomEmp.
@@ -130,6 +157,15 @@ namespace GesPresta {
         protected global::System.Web.UI.WebControls.Label Label6;
         
         /// <summary>
+        /// Control rqdTxtTelefono.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rqdTxtTelefono;
+        
+        /// <summary>
         /// Control txtTelEmp.
         /// </summary>
         /// <remarks>
@@ -148,6 +184,15 @@ namespace GesPresta {
         protected global::System.Web.UI.WebControls.Label Label7;
         
         /// <summary>
+        /// Control rqdTxtFechaNacimiento.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rqdTxtFechaNacimiento;
+        
+        /// <summary>
         /// Control txtFnaEmp.
         /// </summary>
         /// <remarks>
@@ -164,6 +209,15 @@ namespace GesPresta {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label Label8;
+        
+        /// <summary>
+        /// Control rqdTxtFechaIngreso.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rqdTxtFechaIngreso;
         
         /// <summary>
         /// Control txtFinEmp.

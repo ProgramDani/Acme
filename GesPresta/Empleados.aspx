@@ -40,18 +40,21 @@
 
             <div class="Texto">
                 <asp:Label ID="Label11" runat="server" Text="Label">Código de Empleados</asp:Label>
+                <asp:RequiredFieldValidator ID="rqdTxtCodEmp" runat="server" ErrorMessage="*" ControlToValidate="txtCodEmp" ForeColor="Red"></asp:RequiredFieldValidator>
             </div>
             <asp:TextBox ID="txtCodEmp" runat="server"></asp:TextBox>
             <br />
 
             <div class="Texto">
                 <asp:Label ID="Label2" runat="server" Text="Label">NIF</asp:Label>
+                <asp:RequiredFieldValidator ID="rqdTxtNIF" runat="server" ErrorMessage="*" ControlToValidate="txtNifEmp" ForeColor="Red"></asp:RequiredFieldValidator>
             </div>
             <asp:TextBox ID="txtNifEmp" runat="server"></asp:TextBox>
             <br />
             
             <div class="Texto">
                 <asp:Label ID="Label3" runat="server" Text="Label">Apellidos y Nombre</asp:Label>
+                <asp:RequiredFieldValidator ID="rqdTxtApellidoNombre" runat="server" ErrorMessage="*" ControlToValidate="txtNomEmp" ForeColor="Red"></asp:RequiredFieldValidator>
             </div>
             <asp:TextBox ID="txtNomEmp" runat="server" Width="356px"></asp:TextBox>
             <br />
@@ -70,18 +73,21 @@
 
             <div class="Texto">
                 <asp:Label ID="Label6" runat="server" Text="Label">Teléfonos</asp:Label>
+                <asp:RequiredFieldValidator ID="rqdTxtTelefono" runat="server" ErrorMessage="*" ControlToValidate="txtTelEmp" ForeColor="Red"></asp:RequiredFieldValidator>
             </div>
             <asp:TextBox ID="txtTelEmp" runat="server" Width="304px"></asp:TextBox>
             <br />
 
             <div class="Texto">
                 <asp:Label ID="Label7" runat="server" Text="Label">Fecha de Nacimiento</asp:Label>
+                <asp:RequiredFieldValidator ID="rqdTxtFechaNacimiento" runat="server" ErrorMessage="*" ControlToValidate="txtFnaEmp" ForeColor="Red"></asp:RequiredFieldValidator>
             </div>
             <asp:TextBox ID="txtFnaEmp" runat="server"></asp:TextBox>
             <br />
 
             <div class="Texto">
                 <asp:Label ID="Label8" runat="server" Text="Label">Fecha de Ingreso</asp:Label>
+                <asp:RequiredFieldValidator ID="rqdTxtFechaIngreso" runat="server" ErrorMessage="*" ControlToValidate="txtFinEmp" ForeColor="Red"></asp:RequiredFieldValidator>
             </div>
             <asp:TextBox ID="txtFinEmp" runat="server"></asp:TextBox>
             <br />

@@ -12,6 +12,7 @@ namespace GesPresta
         protected void Page_Load(object sender, EventArgs e)
         {
             txtCodEmp.Focus(); // Sitúa el foco en el elemento Código Empleado
+            
         }
 
         protected void cmdEnviar_Click(object sender, EventArgs e)
