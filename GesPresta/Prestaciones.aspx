@@ -27,6 +27,9 @@
         #BotonEnviar{
             text-align:center;
         }
+        .Rangevalidator{
+
+        }
     </style>
 </head>
 <body>
@@ -42,6 +45,7 @@
 
         <div class="Texto">
             <asp:Label ID="Label2" runat="server" Text="Label">Código Prestación</asp:Label>
+            <asp:RequiredFieldValidator ID="rqdTxtCodPrestaciones" runat="server" ErrorMessage="*" ControlToValidate="txtCodPre" ForeColor="Red"></asp:RequiredFieldValidator>
         </div>
         <asp:TextBox ID="txtCodPre" runat="server"></asp:TextBox>
         <br />
@@ -54,12 +58,20 @@
 
         <div class="Texto">
             <asp:Label ID="Label4" runat="server" Text="Label">Importe Fijo</asp:Label>
+            <asp:RequiredFieldValidator ID="rqdTxtImportFijo" runat="server" ErrorMessage="*" ControlToValidate="txtImpPre" ForeColor="Red" Height="0px" Width="0px"></asp:RequiredFieldValidator>
         </div>
+
+        <div class="Rangevalidator">
+           <asp:RangeValidator ID="rngtxtImporte" runat="server" ErrorMessage="El valor introducido debe estar comprendido entre 0,00 y 500,00 " ControlToValidate="txtImpPre" MaximumValue="500,00" MinimumValue="0,00" Type="Double" Height="0px"></asp:RangeValidator>
+        </div>
+
         <asp:TextBox ID="txtImpPre" runat="server"></asp:TextBox>
         <br />
 
         <div class="Texto">
             <asp:Label ID="Label5" runat="server" Text="Label">Porcentaje del Importe</asp:Label>
+            <asp:RequiredFieldValidator ID="rqdTxtPorcImporte" runat="server" ErrorMessage="*" ControlToValidate="txtPorPre" ForeColor="Red"></asp:RequiredFieldValidator>
+            <asp:RangeValidator ID="rngtxtImpPre" runat="server" ErrorMessage="El valor introducido debe estar comprendido entre el 0,00% y el 15,00%" ControlToValidate="txtPorPre" MaximumValue="15,00" MinimumValue="0,00" Type="Double"></asp:RangeValidator>
         </div>
             <asp:TextBox ID="txtPorPre" runat="server"></asp:TextBox>
         <br />

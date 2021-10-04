@@ -49,6 +49,15 @@ namespace GesPresta {
         protected global::System.Web.UI.WebControls.Label Label2;
         
         /// <summary>
+        /// Control rqdTxtCodPrestaciones.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rqdTxtCodPrestaciones;
+        
+        /// <summary>
         /// Control txtCodPre.
         /// </summary>
         /// <remarks>
@@ -85,6 +94,24 @@ namespace GesPresta {
         protected global::System.Web.UI.WebControls.Label Label4;
         
         /// <summary>
+        /// Control rqdTxtImportFijo.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rqdTxtImportFijo;
+        
+        /// <summary>
+        /// Control rngtxtImporte.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RangeValidator rngtxtImporte;
+        
+        /// <summary>
         /// Control txtImpPre.
         /// </summary>
         /// <remarks>
@@ -101,6 +128,24 @@ namespace GesPresta {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label Label5;
+        
+        /// <summary>
+        /// Control rqdTxtPorcImporte.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rqdTxtPorcImporte;
+        
+        /// <summary>
+        /// Control rngtxtImpPre.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RangeValidator rngtxtImpPre;
         
         /// <summary>
         /// Control txtPorPre.
