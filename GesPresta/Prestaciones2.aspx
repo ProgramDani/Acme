@@ -42,6 +42,9 @@
             width: 58%; 
             float: right;
         }
+        .centrado{
+            text-align:center;
+        }
     </style>
 </head>
 <body>
@@ -60,6 +63,7 @@
                 <div class="controles">
                     <asp:RequiredFieldValidator ID="rqdTxtCodPrestaciones" runat="server" ErrorMessage="*" ControlToValidate="txtCodPre" ForeColor="Red">*</asp:RequiredFieldValidator>
                     <asp:TextBox ID="txtCodPre" runat="server" ControlToValidate="txtCodPre"></asp:TextBox>
+                    <asp:Button ID="btnVerPrestaciones" runat="server" Text="Ver prestaciones" CausesValidation="False" OnClick="btnVerPrestaciones_Click" />
                     <asp:RegularExpressionValidator ID="regtxtCodPre" runat="server" ErrorMessage="El formato de los datos a introducir debe ser:  3 dígitos, un guión, 3 dígitos, un guion y, 3 dígitos" ForeColor="#009933" ValidationExpression="\d{3}-\d{3}-\d{3}" ControlToValidate="txtCodPre">*</asp:RegularExpressionValidator>
                 </div>
             </div>
@@ -70,6 +74,9 @@
                 </div>
                 <div class="controles">
                     <asp:TextBox ID="txtDesPre" runat="server" Width="295px"></asp:TextBox>
+                    <uc2:prestacionesBuscar ID="prestacionesBuscar1" runat="server" Visible="False" />
+                    <br />
+                    <asp:Button ID="btnSeleccionar" runat="server" Text="Seleccionar" CausesValidation="False" Visible="False" OnClick="btnSeleccionar_Click" />
                 </div>
             </div>
             <br />
@@ -117,7 +124,11 @@
             </div>
             
             <br />
-            <uc2:prestacionesBuscar ID="prestacionesBuscar1" runat="server" />
+            <div class="centrado">
+                
+                
+                
+            </div>
     </div>
     </form>
 </body>

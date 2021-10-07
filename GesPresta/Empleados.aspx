@@ -37,8 +37,11 @@
         .controles
         {
             text-align: left; 
-            width: 58%; 
+            width:58%;
             float: right;
+        }
+        .controlAlineado{
+            text-align:center;
         }
     </style>
 </head>
@@ -123,8 +126,8 @@
                 <div class="controles">
                     <asp:TextBox ID="txtFnaEmp" runat="server"></asp:TextBox>
                     <asp:RequiredFieldValidator ID="rqdTxtFechaNacimiento" runat="server" ErrorMessage="La fecha de Nacimiento del Empleado es obligatoria" ControlToValidate="txtFnaEmp" ForeColor="Red"></asp:RequiredFieldValidator>
-                    <asp:CompareValidator ID="cmptxtFnaEmp" runat="server" ErrorMessage="CompareValidator" ControlToValidate="txtFnaEmp" ControlToCompare="txtFinEmp" Operator="LessThan"></asp:CompareValidator>
-                    <asp:RegularExpressionValidator ID="regtxtFnac" runat="server" ErrorMessage="El formato de los datos a introducir debe ser:  Formato de fecha dd/mm/aaaa." ControlToValidate="txtFnaEmp" ForeColor="Green" ValidationExpression=" \d\d\/\d\d\/\d\d\d\d"></asp:RegularExpressionValidator>
+                    <asp:CompareValidator ID="cmptxtFnaEmp" runat="server" ErrorMessage="La Fecha de Nacimiento del Empleado debe ser menor a la Fecha de ingreso" ControlToValidate="txtFnaEmp" ControlToCompare="txtFinEmp" Operator="LessThan" ForeColor="Red"></asp:CompareValidator>
+                    <asp:RegularExpressionValidator ID="regtxtFnac" runat="server" ErrorMessage="El formato de los datos a introducir debe ser: dd/mm/aaaa." ControlToValidate="txtFnaEmp" ForeColor="Green" ValidationExpression=" \d\d\/\d\d\/\d\d\d\d"></asp:RegularExpressionValidator>
                 </div>
             </div>
                
@@ -176,8 +179,8 @@
                     <asp:Button ID="cmdEnviar" runat="server" Text="Enviar" Width="68px" />
                 </div>
             </div>
-            <div class="controles">
-                <asp:ValidationSummary ID="ValidationSummary1" runat="server" DisplayMode="List" />
+            <div class="controlAlineado">
+                <asp:ValidationSummary ID="ValidationSummary1" runat="server" DisplayMode="List" ForeColor="Red" />
             </div>
             
         </div>
