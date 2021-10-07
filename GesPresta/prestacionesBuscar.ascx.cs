@@ -13,5 +13,20 @@ namespace GesPresta
         {
 
         }
+        public String Codigo
+        {
+            get
+            {
+                return lstPrestaciones.SelectedValue;
+            }
+        }
+        public String Descripcion
+        {
+            get
+            {
+                return lstPrestaciones.SelectedItem.Text;
+            }
+        }
     }
+    
 }
