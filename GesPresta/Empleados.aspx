@@ -52,8 +52,8 @@
                     <asp:Label ID="Label11" runat="server" Text="Label">Código de Empleados</asp:Label>
                 </div>
                 <div class="controles">
-                    <asp:RequiredFieldValidator ID="rqdTxtCodEmp" runat="server" ErrorMessage="*" ControlToValidate="txtCodEmp" ForeColor="Red"></asp:RequiredFieldValidator>
                     <asp:TextBox ID="txtCodEmp" runat="server"></asp:TextBox>
+                    <asp:RequiredFieldValidator ID="rqdTxtCodEmp" runat="server" ErrorMessage="*" ControlToValidate="txtCodEmp" ForeColor="Red"></asp:RequiredFieldValidator>
                     <asp:RegularExpressionValidator ID="regtxtCodEmp" runat="server" ErrorMessage="El formato de los datos a introducir debe ser: una letra y 5 dígitos" ControlToValidate="txtCodEmp" ForeColor="Green" ValidationExpression="\w\d{5}"></asp:RegularExpressionValidator>
                 </div>
             </div>
@@ -64,9 +64,9 @@
                     <asp:Label ID="Label2" runat="server" Text="Label">NIF</asp:Label>
                 </div>
                 <div class="controles">
-                    <asp:RequiredFieldValidator ID="rqdTxtNIF" runat="server" ErrorMessage="*" ControlToValidate="txtNifEmp" ForeColor="Red"></asp:RequiredFieldValidator>
                     <asp:TextBox ID="txtNifEmp" runat="server"></asp:TextBox>
-                    <asp:RegularExpressionValidator ID="regtxtNIF" runat="server" ErrorMessage="El formato de los datos a introducir debe ser:  8 dígitos, un guion y una letra." ControlToValidate="txtNifEmp" ForeColor="Green" ValidationExpression=" \d{8}-\w"></asp:RegularExpressionValidator>
+                    <asp:RequiredFieldValidator ID="rqdTxtNIF" runat="server" ErrorMessage="*" ControlToValidate="txtNifEmp" ForeColor="Red"></asp:RequiredFieldValidator>
+                    <asp:RegularExpressionValidator ID="regtxtNIF" runat="server" ErrorMessage="*" ControlToValidate="txtNifEmp" ForeColor="Green" ValidationExpression=" \d{8}-\w"></asp:RegularExpressionValidator>
                 </div>
             </div>
             
@@ -76,8 +76,8 @@
                     <asp:Label ID="Label3" runat="server" Text="Label">Apellidos y Nombre</asp:Label>
                 </div>
                 <div class="controles">
-                    <asp:RequiredFieldValidator ID="rqdTxtApellidoNombre" runat="server" ErrorMessage="*" ControlToValidate="txtNomEmp" ForeColor="Red"></asp:RequiredFieldValidator>
                     <asp:TextBox ID="txtNomEmp" runat="server" Width="356px"></asp:TextBox>
+                    <asp:RequiredFieldValidator ID="rqdTxtApellidoNombre" runat="server" ErrorMessage="*" ControlToValidate="txtNomEmp" ForeColor="Red"></asp:RequiredFieldValidator>
                 </div>
             </div>
             
@@ -110,8 +110,8 @@
                     <asp:Label ID="Label6" runat="server" Text="Label">Teléfonos</asp:Label>
                 </div>
                 <div class="controles">
-                    <asp:RequiredFieldValidator ID="rqdTxtTelefono" runat="server" ErrorMessage="*" ControlToValidate="txtTelEmp" ForeColor="Red"></asp:RequiredFieldValidator>
                     <asp:TextBox ID="txtTelEmp" runat="server" Width="304px"></asp:TextBox>
+                    <asp:RequiredFieldValidator ID="rqdTxtTelefono" runat="server" ErrorMessage="*" ControlToValidate="txtTelEmp" ForeColor="Red"></asp:RequiredFieldValidator>
                 </div>
             </div>
 
@@ -121,8 +121,8 @@
                     <asp:Label ID="Label7" runat="server" Text="Label">Fecha de Nacimiento</asp:Label>
                 </div>
                 <div class="controles">
+                    <asp:TextBox ID="txtFnaEmp" runat="server"></asp:TextBox>
                     <asp:RequiredFieldValidator ID="rqdTxtFechaNacimiento" runat="server" ErrorMessage="*" ControlToValidate="txtFnaEmp" ForeColor="Red"></asp:RequiredFieldValidator>
-                     <asp:TextBox ID="txtFnaEmp" runat="server"></asp:TextBox>
                     <asp:CompareValidator ID="cmptxtFnaEmp" runat="server" ErrorMessage="CompareValidator" ControlToValidate="txtFnaEmp" ControlToCompare="txtFinEmp"></asp:CompareValidator>
                     <asp:RegularExpressionValidator ID="regtxtFnac" runat="server" ErrorMessage="El formato de los datos a introducir debe ser:  Formato de fecha dd/mm/aaaa." ControlToValidate="txtFnaEmp" ForeColor="Green" ValidationExpression=" \d\d\/\d\d\/\d\d\d\d"></asp:RegularExpressionValidator>
                 </div>
@@ -176,6 +176,10 @@
                     <asp:Button ID="cmdEnviar" runat="server" Text="Enviar" Width="68px" />
                 </div>
             </div>
+            <div class="controles">
+                <asp:ValidationSummary ID="ValidationSummary1" runat="server" />
+            </div>
+            
         </div>
     </form>
 </body>
