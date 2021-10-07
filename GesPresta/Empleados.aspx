@@ -135,8 +135,8 @@
                     <asp:Label ID="Label8" runat="server" Text="Label">Fecha de Ingreso</asp:Label>
                 </div>
                 <div class="controles">
-                    <asp:RequiredFieldValidator ID="rqdTxtFechaIngreso" runat="server" ErrorMessage="*" ControlToValidate="txtFinEmp" ForeColor="Red"></asp:RequiredFieldValidator>
                     <asp:TextBox ID="txtFinEmp" runat="server" ControlToValidate="txtFinEmp"></asp:TextBox>
+                    <asp:RequiredFieldValidator ID="rqdTxtFechaIngreso" runat="server" ErrorMessage="*" ControlToValidate="txtFinEmp" ForeColor="Red"></asp:RequiredFieldValidator>
                     <asp:CompareValidator ID="CompareValidator1" runat="server" ErrorMessage="“La Fecha de Ingreso del Empleado debe ser mayor que la Fecha de Nacimiento" Type="Date" Operator="LessThan" ControlToCompare="txtFnaEmp" ControlToValidate="txtFinEmp" ForeColor="Red"></asp:CompareValidator>
                     <asp:RegularExpressionValidator ID="regtxtFing" runat="server" ErrorMessage="El formato de los datos a introducir debe ser: Formato de fecha dd/mm/aaaa." ControlToValidate="txtFinEmp" ForeColor="green" ValidationExpression="\d\d\/\d\d\/\d\d\d\d"></asp:RegularExpressionValidator>
                 </div>
@@ -177,7 +177,7 @@
                 </div>
             </div>
             <div class="controles">
-                <asp:ValidationSummary ID="ValidationSummary1" runat="server" />
+                <asp:ValidationSummary ID="ValidationSummary1" runat="server" DisplayMode="List" />
             </div>
             
         </div>

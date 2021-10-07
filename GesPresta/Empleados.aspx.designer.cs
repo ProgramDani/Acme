@@ -249,15 +249,6 @@ namespace GesPresta
         protected global::System.Web.UI.WebControls.Label Label8;
 
         /// <summary>
-        /// Control rqdTxtFechaIngreso.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator rqdTxtFechaIngreso;
-
-        /// <summary>
         /// Control txtFinEmp.
         /// </summary>
         /// <remarks>
@@ -265,6 +256,15 @@ namespace GesPresta
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtFinEmp;
+
+        /// <summary>
+        /// Control rqdTxtFechaIngreso.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rqdTxtFechaIngreso;
 
         /// <summary>
         /// Control CompareValidator1.

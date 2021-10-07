@@ -6,7 +6,7 @@
 
     &nbsp;&nbsp;&nbsp;
 
-    <asp:LinkButton ID="LinkButton3" runat="server" PostBackUrl="~/Prestaciones1.aspx">Prestaciones</asp:LinkButton>
+    <asp:LinkButton ID="LinkButton3" runat="server" PostBackUrl="~/Prestaciones1.aspx" CausesValidation="False">Prestaciones</asp:LinkButton>
     <hr />
 <p  style="text-align:center; height: 17px;">
 
