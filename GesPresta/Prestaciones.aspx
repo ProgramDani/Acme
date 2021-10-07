@@ -57,7 +57,8 @@
                 </div>
                 <div class="controles">
                     <asp:RequiredFieldValidator ID="rqdTxtCodPrestaciones" runat="server" ErrorMessage="*" ControlToValidate="txtCodPre" ForeColor="Red"></asp:RequiredFieldValidator>
-                    <asp:TextBox ID="txtCodPre" runat="server"></asp:TextBox>
+                    <asp:TextBox ID="txtCodPre" runat="server" ControlToValidate="txtCodPre"></asp:TextBox>
+                    <asp:RegularExpressionValidator ID="regtxtCodPre" runat="server" ErrorMessage="El formato de los datos a introducir debe ser:  3 dígitos, un guión, 3 dígitos, un guion y, 3 dígitos" ForeColor="#009933" ValidationExpression="\d{3}-\d{3}-\d{3}"></asp:RegularExpressionValidator>
                 </div>
             </div>
             <br />

@@ -7,11 +7,13 @@
 // </generado automáticamente>
 //------------------------------------------------------------------------------
 
-namespace GesPresta {
-    
-    
-    public partial class Prestaciones {
-        
+namespace GesPresta
+{
+
+
+    public partial class Prestaciones
+    {
+
         /// <summary>
         /// Control form1.
         /// </summary>
@@ -20,7 +22,7 @@ namespace GesPresta {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
-        
+
         /// <summary>
         /// Control Cabecera1.
         /// </summary>
@@ -29,7 +31,7 @@ namespace GesPresta {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::GesPresta.Cabecera Cabecera1;
-        
+
         /// <summary>
         /// Control Label1.
         /// </summary>
@@ -38,7 +40,7 @@ namespace GesPresta {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label Label1;
-        
+
         /// <summary>
         /// Control Label2.
         /// </summary>
@@ -47,7 +49,7 @@ namespace GesPresta {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label Label2;
-        
+
         /// <summary>
         /// Control rqdTxtCodPrestaciones.
         /// </summary>
@@ -56,7 +58,7 @@ namespace GesPresta {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.RequiredFieldValidator rqdTxtCodPrestaciones;
-        
+
         /// <summary>
         /// Control txtCodPre.
         /// </summary>
@@ -65,7 +67,16 @@ namespace GesPresta {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtCodPre;
-        
+
+        /// <summary>
+        /// Control regtxtCodPre.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator regtxtCodPre;
+
         /// <summary>
         /// Control Label3.
         /// </summary>
@@ -74,7 +85,7 @@ namespace GesPresta {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label Label3;
-        
+
         /// <summary>
         /// Control txtDesPre.
         /// </summary>
@@ -83,7 +94,7 @@ namespace GesPresta {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtDesPre;
-        
+
         /// <summary>
         /// Control Label4.
         /// </summary>
@@ -92,7 +103,7 @@ namespace GesPresta {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label Label4;
-        
+
         /// <summary>
         /// Control rqdTxtImportFijo.
         /// </summary>
@@ -101,7 +112,7 @@ namespace GesPresta {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.RequiredFieldValidator rqdTxtImportFijo;
-        
+
         /// <summary>
         /// Control txtImpPre.
         /// </summary>
@@ -110,7 +121,7 @@ namespace GesPresta {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtImpPre;
-        
+
         /// <summary>
         /// Control rngtxtImporte.
         /// </summary>
@@ -119,7 +130,7 @@ namespace GesPresta {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.RangeValidator rngtxtImporte;
-        
+
         /// <summary>
         /// Control Label5.
         /// </summary>
@@ -128,7 +139,7 @@ namespace GesPresta {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label Label5;
-        
+
         /// <summary>
         /// Control rqdTxtPorcImporte.
         /// </summary>
@@ -137,7 +148,7 @@ namespace GesPresta {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.RequiredFieldValidator rqdTxtPorcImporte;
-        
+
         /// <summary>
         /// Control txtPorPre.
         /// </summary>
@@ -146,7 +157,7 @@ namespace GesPresta {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtPorPre;
-        
+
         /// <summary>
         /// Control rngtxtImpPre.
         /// </summary>
@@ -155,7 +166,7 @@ namespace GesPresta {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.RangeValidator rngtxtImpPre;
-        
+
         /// <summary>
         /// Control Label6.
         /// </summary>
@@ -164,7 +175,7 @@ namespace GesPresta {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label Label6;
-        
+
         /// <summary>
         /// Control ddlTipPre.
         /// </summary>
@@ -173,7 +184,7 @@ namespace GesPresta {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DropDownList ddlTipPre;
-        
+
         /// <summary>
         /// Control cmdEnviar.
         /// </summary>
