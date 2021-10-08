@@ -45,6 +45,9 @@
         .centrado{
             text-align:center;
         }
+        .float{
+            float:right;
+        }
     </style>
 </head>
 <body>
@@ -74,9 +77,10 @@
                 </div>
                 <div class="controles">
                     <asp:TextBox ID="txtDesPre" runat="server" Width="295px"></asp:TextBox>
-                    <uc2:prestacionesBuscar ID="prestacionesBuscar1" runat="server" Visible="False" />
-                    <br />
-                    <asp:Button ID="btnSeleccionar" runat="server" Text="Seleccionar" CausesValidation="False" Visible="False" OnClick="btnSeleccionar_Click" />
+                    <div class="float">
+                        <uc2:prestacionesBuscar ID="prestacionesBuscar1" runat="server" Visible="False" />
+                        <asp:Button ID="btnSeleccionar" runat="server" Text="Seleccionar" CausesValidation="False" Visible="False" OnClick="btnSeleccionar_Click" />
+                    </div>
                 </div>
             </div>
             <br />
@@ -122,13 +126,7 @@
                 <asp:Button ID="cmdEnviar" runat="server" Text="Enviar" />
                 </div>
             </div>
-            
             <br />
-            <div class="centrado">
-                
-                
-                
-            </div>
     </div>
     </form>
 </body>
