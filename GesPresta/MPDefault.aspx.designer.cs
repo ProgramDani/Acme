@@ -7,9 +7,11 @@
 // </generado automáticamente>
 //------------------------------------------------------------------------------
 
-namespace GesPresta {
-    
-    
-    public partial class MPDefault {
+namespace GesPresta
+{
+
+
+    public partial class MPDefault
+    {
     }
 }
