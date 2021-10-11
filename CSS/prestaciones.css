@@ -1,0 +1,31 @@
+.cuerpo{
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-top: 15px;
+    padding-bottom: 30px;
+    width: 80%;
+}
+.Titulo {
+    text-align:center;
+    padding-bottom:1em;
+    font-weight:bold;
+}
+.Texto{
+    text-align: right; 
+    width: 40%; 
+    position: relative; 
+    float: left;
+    font-family: Arial;
+}
+.linea{
+    height: 25px;
+}
+.BotonEnviar{
+    text-align:center;
+}
+.controles
+{
+    text-align: left; 
+    width: 58%; 
+    float: right;
+}

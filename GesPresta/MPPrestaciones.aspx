@@ -1,19 +1,9 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Prestaciones.aspx.cs" Inherits="GesPresta.Prestaciones" %>
-
-<%@ Register src="Cabecera.ascx" tagname="Cabecera" tagprefix="uc1" %>
-
-<!DOCTYPE html>
-
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <title></title>
-   <link rel="stylesheet" type="text/css" href="../CSS/prestaciones.css" />
-</head>
-<body>
-    <form id="form1" runat="server">
-        <uc1:Cabecera ID="Cabecera1" runat="server" />
-        <div class="Titulo">
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.Master" AutoEventWireup="true" CodeBehind="MPPrestaciones.aspx.cs" Inherits="GesPresta.MPPrestaciones" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <link rel="stylesheet" type="text/css" href="../CSS/prestaciones.css" />
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    <div class="Titulo">
             <asp:Label ID="Label1" runat="server" Text="Label">DATOS DE LAS PRESTACIONES</asp:Label>
         </div>
         <br />
@@ -81,9 +71,5 @@
                 <asp:Button ID="cmdEnviar" runat="server" Text="Enviar" />
                 </div>
             </div>
-            
-            <br />
-    </div>
-    </form>
-</body>
-</html>
+        </div>
+</asp:Content>
