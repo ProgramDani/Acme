@@ -4,7 +4,6 @@
     padding-top: 15px;
     padding-bottom: 30px;
     width: 80%;
-    text-aling:center;
 }
 .Titulo {
     text-align:center;
@@ -27,9 +26,6 @@
 .controles
 {
     text-align: left; 
-    width:58%;
+    width: 58%; 
     float: right;
-}
-.controlAlineado{
-    text-align:center;
 }

@@ -115,6 +115,7 @@
     <Content Include="MPDefault.aspx" />
     <Content Include="MPEmpleados.aspx" />
     <Content Include="MPPrestaciones.aspx" />
+    <Content Include="prestaciones.css" />
     <Content Include="Prestaciones2.aspx" />
     <Content Include="Prestaciones1.aspx" />
     <Content Include="Prestaciones.aspx" />
@@ -122,6 +123,7 @@
       <BrowseToURL>~/Prestaciones1Respuesta.aspx</BrowseToURL>
     </Content>
     <Content Include="prestacionesBuscar.ascx" />
+    <Content Include="MasterPage.Master" />
     <None Include="Scripts\jquery-3.6.0.intellisense.js" />
     <Content Include="Scripts\jquery-3.6.0.js" />
     <Content Include="Scripts\jquery-3.6.0.min.js" />
@@ -129,6 +131,7 @@
     <Content Include="Scripts\jquery-3.6.0.slim.min.js" />
     <Content Include="Scripts\jquery-ui-1.12.1.js" />
     <Content Include="Scripts\jquery-ui-1.12.1.min.js" />
+    <Content Include="style.css" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -233,7 +236,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="MasterPage.Master" />
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-3.6.0.slim.min.map" />
     <Content Include="Scripts\jquery-3.6.0.min.map" />

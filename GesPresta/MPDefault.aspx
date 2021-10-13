@@ -8,6 +8,6 @@
                 <br />
                 Esta aplicación a través de Web permite realizar todas las tareas de gesticón relacionadas con la prestación de ayudas a los empleados.
                 <br />
-                Para cualquier duda o cunsulta puede contactar con el Departamento de Ayuda Social:<asp:LinkButton ID="LinkButton4" runat="server" PostBackUrl="http://ayuda.social@acme.com/">ayuda.social@acme.com</asp:LinkButton>
+                Para cualquier duda o cunsulta puede contactar con el Departamento de Ayuda Social: ayuda.social@acme.com
             </asp:Label>
 </asp:Content>

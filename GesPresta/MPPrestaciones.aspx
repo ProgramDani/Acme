@@ -1,6 +1,6 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.Master" AutoEventWireup="true" CodeBehind="MPPrestaciones.aspx.cs" Inherits="GesPresta.MPPrestaciones" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-    <link rel="stylesheet" type="text/css" href="../CSS/prestaciones.css" />
+    <link rel="stylesheet" type="text/css" href="prestaciones.css" />
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div class="Titulo">
@@ -15,8 +15,8 @@
                 </div>
                 <div class="controles">
                     <asp:RequiredFieldValidator ID="rqdTxtCodPrestaciones" runat="server" ErrorMessage="*" ControlToValidate="txtCodPre" ForeColor="Red"></asp:RequiredFieldValidator>
-                    <asp:TextBox ID="txtCodPre" runat="server" ControlToValidate="txtCodPre"></asp:TextBox>
-                    <asp:RegularExpressionValidator ID="regtxtCodPre" runat="server" ErrorMessage="El formato de los datos a introducir debe ser:  3 dígitos, un guión, 3 dígitos, un guion y, 3 dígitos" ForeColor="#009933" ValidationExpression="\d{3}-\d{3}-\d{3}"></asp:RegularExpressionValidator>
+                    <asp:TextBox ID="txtCodPre" runat="server"></asp:TextBox>
+                    <asp:RegularExpressionValidator ID="regtxtCodPre" runat="server" ErrorMessage="El formato de los datos a introducir debe ser:  3 dígitos, un guión, 3 dígitos, un guion y, 3 dígitos" ForeColor="#009933" ValidationExpression="\d{3}-\d{3}-\d{3}" ControlToValidate="txtCodPre"></asp:RegularExpressionValidator>
                 </div>
             </div>
             <br />

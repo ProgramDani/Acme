@@ -11,8 +11,3 @@
 <p  style="text-align:center; height: 24px; margin-top: 2px;">
     <asp:Label ID="Label2" runat="server" Text="Label">Gestión de Prestaciones Sociles</asp:Label>
 </p>
-       
-
-
-
-
