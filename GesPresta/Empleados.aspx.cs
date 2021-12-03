@@ -12,7 +12,7 @@ namespace GesPresta
         protected void Page_Load(object sender, EventArgs e)
         {
             txtCodEmp.Focus(); // Sitúa el foco en el elemento Código Empleado
-
+             isPost
             txtNifEmp.Text = "11111111"; // Establece un valor por defecto para el campo
             int a = 3; // Produce un error en tiempo de ejecución
             int b = 0;
